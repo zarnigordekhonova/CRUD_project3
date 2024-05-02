@@ -1,0 +1,15 @@
+<title>Detail</title>
+
+
+
+<body>
+<img src="{{ product.image.url }}"/><br>
+Category: {{product.category}}<br>
+Model: {{ product.model }}<br>
+Make: {{ product.make }}<br>
+Color: {{ product.color }}<br>
+price: {{ product.price }}<hr>
+
+<a href="{% url 'get_info'%}" >home</a><br>
+
+</body>
