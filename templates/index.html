@@ -1,14 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Home Page</title>
-</head>
+<title>Home Page</title>
+
+<h1>Home Page</h1><br>
+
+<h3>Categories</h3><br>
+
 <body>
-    <h1>Home Page</h1>
-    <h3>Categories</h3>
-    {% for category in categories %}
-    <a href="{% url 'get_product' category.pk %}"> {{ category.name }}</a><br>
-    {% endfor %}
+{% for category in categories %}
+<a href="{% url 'Transport:get_products' category.pk %}" >{{ category.name }}<br>
+{% endfor %}
+<a href="{% url 'Transport:add_products' %}"><b>Add Products</b></a><br>
+
 </body>
-</html>

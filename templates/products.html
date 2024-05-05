@@ -5,7 +5,8 @@
 
 <body>
 {% for product in products %}
-    <a href="{% url 'detail' product.pk %}" >{{ product.model }}</a><hr>
+<a href="{% url 'Transport:detail' product.pk %}" >{{ product.model }}</a><hr>
+
 {% endfor %}
 
 </body>

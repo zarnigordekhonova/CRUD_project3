@@ -19,4 +19,4 @@ class Transport(models.Model):
 
 
     def __str__(self):
-        return f'{self.category.name} {self.model}'
+        return f'{self.category.make} {self.model}'
